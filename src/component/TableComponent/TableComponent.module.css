@@ -23,15 +23,6 @@
 
 }
 
-.bodyName {
-    height: 100%;
-    text-align: center;
-
-}
-
-.bodyDate {
-    height: 100%;
-    border-left: 1px solid #c2c2c2;
-    margin: 0;
+.bodyItem {
     text-align: center;
 }

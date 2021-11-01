@@ -10,22 +10,43 @@ export const config = {
             keyName: 'date',
             displayName: 'Дата',
         },
+        {
+            keyName: 'surname',
+            displayName: 'Фамилия',
+        },
+        {
+            keyName: 'patronymic',
+            displayName: 'Отчество',
+        },
+        {
+            keyName: 'education',
+            displayName: 'Образование',
+        },
     ],
     tableData: [
         {
             id: `${uuid()}`,
-            name: 'Иванов',
+            name: 'Ivan',
             date: `${new Date()}`,
+            surname: 'Ivanov',
+            patronymic: 'Ivanovich',
+            education: 'qwerty',
         },
         {
             id: `${uuid()}`,
-            name: 'Петров',
+            name: 'Petr',
             date: `Mon Oct 22 2021 01:56:27 GMT+0300 (Москва, стандартное время)`,
+            surname: 'Petrov',
+            patronymic: 'Petrovich',
+            education: 'qwerty',
         },
         {
             id: `${uuid()}`,
-            name: 'Сидоров',
+            name: 'Sidor',
             date: `Tue Oct 26 2021 11:56:27 GMT+0300 (Москва, стандартное время)`,
+            surname: 'Sidorov',
+            patronymic: 'Sidorovich',
+            education: 'qwerty',
         },
     ]
 }
