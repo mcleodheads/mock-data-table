@@ -1,5 +1,5 @@
 {
-  "name": "webpackpreset",
+  "name": "mockdatatable",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcleodheads/webpack-react-preset.git"
+    "url": "git+https://github.com/mcleodheads/mock-data-table.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mcleodheads/webpack-react-preset/issues"
+    "url": "https://github.com/mcleodheads/mock-data-table/issues"
   },
-  "homepage": "https://github.com/mcleodheads/webpack-react-preset#readme",
+  "homepage": "https://github.com/mcleodheads/mock-data-table#readme",
   "devDependencies": {
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
