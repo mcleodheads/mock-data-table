@@ -19,8 +19,12 @@ export const config = {
             displayName: 'Отчество',
         },
         {
-            keyName: 'education',
-            displayName: 'Образование',
+            keyName: 'zxc',
+            displayName: 'zxc',
+        },
+        {
+            keyName: 'unused col',
+            displayName: 'unused col',
         },
     ],
     tableData: [
@@ -30,7 +34,6 @@ export const config = {
             date: `${new Date()}`,
             surname: 'Ivanov',
             patronymic: 'Ivanovich',
-            education: 'qwerty',
         },
         {
             id: `${uuid()}`,
@@ -38,7 +41,9 @@ export const config = {
             date: `Mon Oct 22 2021 01:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Petrov',
             patronymic: 'Petrovich',
-            education: 'qwerty',
+            qwe: 'qweqwe',
+            asd: 'tgb',
+            zxc: 'zxc',
         },
         {
             id: `${uuid()}`,
@@ -46,7 +51,11 @@ export const config = {
             date: `Tue Oct 26 2021 11:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Sidorov',
             patronymic: 'Sidorovich',
-            education: 'qwerty',
+            qwe: 'qweqwe',
+            qwe1: 'qweqwe',
+            qwe2: 'qweqwe',
+            qwe3: 'qweqwe',
+
         },
     ]
 }

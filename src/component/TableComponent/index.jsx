@@ -22,19 +22,15 @@ const TableComponent = () => {
             </thead>
             <tbody className={st.tableBody}>
             {
-                config.tableData.map(items => {
-                    const newItems = _.omit(items, 'id') // lodash return copy of object without 'id' field
+                config.tableData.map(data => {
+                    const keysIntersection = _.intersection(Object.keys(data), config.tableHeaders.map(item => item.keyName))
+                    console.log(keysIntersection)
                     return (
-                        <tr
-                            className={st.bodyRow}
-                            key={items.id}>
+                        <tr key={data.id}>
                             {
-                                Object.values(newItems).map(data => {
-                                    return (
-                                        <td className={st.bodyItem}
-                                            key={data}>{data}</td>
-                                    )
-                                })
+                                keysIntersection.map(item => (
+                                    <td key={item}>{data[item]}</td>
+                                ))
                             }
                         </tr>
                     )
