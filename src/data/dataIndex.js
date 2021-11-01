@@ -1,6 +1,5 @@
 import uuid from 'react-uuid'
 
-
 export const config = {
     tableHeaders: [
         {
