@@ -23,7 +23,7 @@ const TableComponent = () => {
             <tbody className={st.tableBody}>
             {
                 config.tableData.map(items => {
-                    const newItems = _.omit(items, 'id') // lodash used
+                    const newItems = _.omit(items, 'id') // lodash return copy of object without 'id' field
                     return (
                         <tr
                             className={st.bodyRow}
