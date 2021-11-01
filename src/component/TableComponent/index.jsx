@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 
-import {tableData, tableHeaders} from "../../data/dataIndex";
+import {config} from "../../data/dataIndex";
 
 import st from './TableComponent.module.css'
 
 const TableComponent = () => {
-    const [data, setData] = useState(tableData)
-    const [headers, setHeaders] = useState(tableHeaders)
+    const [data, setData] = useState(config.tableData)
+    const [headers, setHeaders] = useState(config.tableHeaders)
 
     return (
         <table className={st.wrapper}>
