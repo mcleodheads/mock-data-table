@@ -1,5 +1,6 @@
 import React from 'react';
 import * as _ from 'lodash'
+
 import {config} from "../../data/dataIndex";
 
 import st from './TableComponent.module.css'
