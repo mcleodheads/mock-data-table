@@ -1,2 +1,2 @@
-# webpack-react-preset<br/>
+# Mock data table<br/>
 npm install -> npm run dev
