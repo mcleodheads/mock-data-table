@@ -23,7 +23,7 @@ export const config = {
             displayName: 'zxc',
         },
         {
-            keyName: 'unused col',
+            keyName: 'unusedСol',
             displayName: 'unused col',
         },
     ],
@@ -44,6 +44,7 @@ export const config = {
             qwe: 'qweqwe',
             asd: 'tgb',
             zxc: 'zxc',
+            unusedСol: 'unusedСol'
         },
         {
             id: `${uuid()}`,

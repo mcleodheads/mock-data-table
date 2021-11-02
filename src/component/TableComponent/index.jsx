@@ -29,7 +29,9 @@ const TableComponent = () => {
                         <tr key={data.id}>
                             {
                                 keysIntersection.map(item => (
-                                    <td key={item}>{data[item]}</td>
+                                    <td
+                                        className={st.bodyItem}
+                                        key={item}>{data[item]}</td>
                                 ))
                             }
                         </tr>
