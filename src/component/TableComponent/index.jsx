@@ -24,7 +24,6 @@ const TableComponent = () => {
             {
                 config.tableData.map(data => {
                     const keysIntersection = _.intersection(Object.keys(data), config.tableHeaders.map(item => item.keyName))
-                    console.log(keysIntersection)
                     return (
                         <tr key={data.id}>
                             {

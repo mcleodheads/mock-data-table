@@ -18,14 +18,6 @@ export const config = {
             keyName: 'patronymic',
             displayName: 'Отчество',
         },
-        {
-            keyName: 'zxc',
-            displayName: 'zxc',
-        },
-        {
-            keyName: 'unusedСol',
-            displayName: 'unused col',
-        },
     ],
     tableData: [
         {
@@ -34,6 +26,9 @@ export const config = {
             date: `${new Date()}`,
             surname: 'Ivanov',
             patronymic: 'Ivanovich',
+            unusedData1: 'unusedData1',
+            unusedData2: 'unusedData2',
+            unusedData3: 'unusedData3',
         },
         {
             id: `${uuid()}`,
@@ -41,10 +36,9 @@ export const config = {
             date: `Mon Oct 22 2021 01:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Petrov',
             patronymic: 'Petrovich',
-            qwe: 'qweqwe',
-            asd: 'tgb',
-            zxc: 'zxc',
-            unusedСol: 'unusedСol'
+            unusedData1: 'unusedData1',
+            unusedData2: 'unusedData2',
+            unusedData3: 'unusedData3',
         },
         {
             id: `${uuid()}`,
@@ -52,11 +46,9 @@ export const config = {
             date: `Tue Oct 26 2021 11:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Sidorov',
             patronymic: 'Sidorovich',
-            qwe: 'qweqwe',
-            qwe1: 'qweqwe',
-            qwe2: 'qweqwe',
-            qwe3: 'qweqwe',
-
+            unusedData1: 'unusedData1',
+            unusedData2: 'unusedData2',
+            unusedData3: 'unusedData3',
         },
     ]
 }
