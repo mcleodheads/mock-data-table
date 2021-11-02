@@ -12,8 +12,7 @@ const TableComponent = () => {
             <tr className={st.headerRow}>
                 {
                     config.tableHeaders.map(header => (
-                        <th className={st.header}
-                            key={header.keyName}>
+                        <th key={header.keyName}>
                             {header.displayName}
                         </th>
                     ))
@@ -22,20 +21,17 @@ const TableComponent = () => {
             </thead>
             <tbody className={st.tableBody}>
             {
-                config.tableData.map(data => {
-                    const keysIntersection = _.intersection(Object.keys(data), config.tableHeaders.map(item => item.keyName))
-                    return (
-                        <tr key={data.id}>
-                            {
-                                keysIntersection.map(item => (
-                                    <td
-                                        className={st.bodyItem}
-                                        key={item}>{data[item]}</td>
-                                ))
-                            }
-                        </tr>
-                    )
-                })
+                config.tableData.map(data => (
+                    <tr key={data.id}>
+                        {
+                            config.tableHeaders.map(key => (
+                                <td className={st.bodyItem} key={key.keyName}>
+                                    {data[key.keyName]}
+                                </td>
+                            ))
+                        }
+                    </tr>
+                ))
             }
             </tbody>
         </table>
