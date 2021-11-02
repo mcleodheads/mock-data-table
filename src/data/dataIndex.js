@@ -18,6 +18,7 @@ export const config = {
             keyName: 'patronymic',
             displayName: 'Отчество',
         },
+
     ],
     tableData: [
         {
