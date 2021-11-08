@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TableComponent from "./component/TableComponent";
+import TableComponent from "./components/TableComponent";
 
 const App = () => {
     return <TableComponent />

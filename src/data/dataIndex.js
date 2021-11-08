@@ -3,22 +3,25 @@ import uuid from 'react-uuid'
 export const config = {
     tableHeaders: [
         {
-            keyName: 'name',
-            displayName: 'Имя',
+            key: 'name',
+            text: 'имя',
+            value: 'имя',
         },
         {
-            keyName: 'date',
-            displayName: 'Дата',
+            key: 'date',
+            text: 'дата',
+            value: 'дата',
         },
         {
-            keyName: 'surname',
-            displayName: 'Фамилия',
+            key: 'surname',
+            text: 'фамилия',
+            value: 'фамилия',
         },
         {
-            keyName: 'patronymic',
-            displayName: 'Отчество',
+            key: 'patronymic',
+            text: 'отчество',
+            value: 'отчество',
         },
-
     ],
     tableData: [
         {
@@ -27,9 +30,6 @@ export const config = {
             date: `${new Date()}`,
             surname: 'Ivanov',
             patronymic: 'Ivanovich',
-            unusedData1: 'unusedData1',
-            unusedData2: 'unusedData2',
-            unusedData3: 'unusedData3',
         },
         {
             id: `${uuid()}`,
@@ -37,9 +37,6 @@ export const config = {
             date: `Mon Oct 22 2021 01:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Petrov',
             patronymic: 'Petrovich',
-            unusedData1: 'unusedData1',
-            unusedData2: 'unusedData2',
-            unusedData3: 'unusedData3',
         },
         {
             id: `${uuid()}`,
@@ -47,9 +44,6 @@ export const config = {
             date: `Tue Oct 26 2021 11:56:27 GMT+0300 (Москва, стандартное время)`,
             surname: 'Sidorov',
             patronymic: 'Sidorovich',
-            unusedData1: 'unusedData1',
-            unusedData2: 'unusedData2',
-            unusedData3: 'unusedData3',
         },
     ]
 }
