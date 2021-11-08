@@ -3,7 +3,7 @@ import {DragDropContext, Draggable, Droppable} from "react-beautiful-dnd";
 
 import {config} from "../data/dataIndex";
 
-import {Dimmer, Dropdown, Loader, Ref, Segment, Table} from "semantic-ui-react";
+import {Dimmer, Dropdown, Loader, Placeholder, Ref, Segment, Table, TableCell} from "semantic-ui-react";
 
 const TableComponent = () => {
     const [headers, setHeaders] = useState([])
@@ -47,7 +47,7 @@ const TableComponent = () => {
                 onChange={(e, data) => handleGetCol(e, data)}
             />
             <DragDropContext onDragStart={() => setBlur(true)} onDragEnd={result => onDragEnd(result)}>
-                <Table compact singleLine striped >
+                <Table compact singleLine>
                     <Table.Header>
                         <Droppable droppableId={'droppable'} direction={'horizontal'}>
                             {
@@ -67,7 +67,7 @@ const TableComponent = () => {
                                                                     provided => (
                                                                         <Ref innerRef={provided.innerRef}>
                                                                             <Table.HeaderCell
-                                                                                width={'3'}
+                                                                                width={4}
                                                                                 {...provided.draggableProps}
                                                                                 {...provided.dragHandleProps}
                                                                                 key={item.key}>
@@ -97,7 +97,6 @@ const TableComponent = () => {
                                         config.tableData.map((data, index) => {
                                             return (
                                                 <Table.Row key={data.id}>
-
                                                     {
                                                         headers.map(keys => {
                                                             const key = config.tableHeaders
